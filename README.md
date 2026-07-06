@@ -1,10 +1,10 @@
-# Olá, eu sou o Iago Lima! 👋
+# Olá Mundo, eu sou o Iago Lima! 👋
 
 Estudante de **Ciência da Computação** no IFCE e Desenvolvedor focado em **Full Stack**. Combino minha formação técnica com experiência prática em design e criação de conteúdo para construir soluções completas, funcionais e bem estruturadas.
 
 ---
 
-### 💻 Sobre Mim
+### 💻 Sobre programar
 - 🎓 Bacharelado em **Ciência da Computação** — IFCE Maracanaú (Previsão: 2029).
 - 🚀 Atualmente em busca de oportunidades de estágio em desenvolvimento de software.
 - 🤖 Experiência prática criando **Bots para Discord** utilizando TypeScript e Node.js.
@@ -20,12 +20,6 @@ Estudante de **Ciência da Computação** no IFCE e Desenvolvedor focado em **Fu
 | **Front-End / Mobile** | HTML5, CSS3, JavaScript, TypeScript, React Native |
 | **DevOps / Ferramentas**| Git, GitHub, Canva, Pacote Office, Discord.js |
 
-<br/>
-
-```text
-Linguagens e Ferramentas Principais: C | Python | TypeScript | Node.js | Git & GitHub
-```
-
 ---
 
 ### 📜 Certificações Destacadas
@@ -33,14 +27,6 @@ Linguagens e Ferramentas Principais: C | Python | TypeScript | Node.js | Git & G
 - 🐙 **Git e GitHub** — IFSUL
 - 📱 **React Native** — IFRS
 - 🟢 **Node.js** — IFRS
-
----
-
-### 📊 Estatísticas do GitHub
-
-<p align="left">
-  <img src="https://vercel.app" alt="Estatísticas do GitHub" height="150"/>
-</p>
 
 ---
 
