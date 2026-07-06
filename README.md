@@ -16,19 +16,15 @@ Estudante de **Ciência da Computação** no IFCE e Desenvolvedor focado em **Fu
 
 | Categoria | Tecnologias |
 | :--- | :--- |
-| **Back-End / Lógica** | `C`, `C++`, `Python`, `Node.js` |
-| **Front-End / Mobile** | `HTML5`, `CSS3`, `JavaScript`, `TypeScript`, `React Native` |
-| **DevOps / Ferramentas**| `Git`, `GitHub`, `Canva`, `Pacote Office`, `Discord.js` |
+| **Back-End / Lógica** | C, C++, Python, Node.js |
+| **Front-End / Mobile** | HTML5, CSS3, JavaScript, TypeScript, React Native |
+| **DevOps / Ferramentas**| Git, GitHub, Canva, Pacote Office, Discord.js |
 
 <br/>
 
-<div id="badges">
-  <img src="https://shields.io" alt="C Badge"/>
-  <img src="https://shields.io" alt="Python Badge"/>
-  <img src="https://shields.io" alt="TypeScript Badge"/>
-  <img src="https://shields.io" alt="Node Badge"/>
-  <img src="https://shields.io" alt="Git Badge"/>
-</div>
+```text
+Linguagens e Ferramentas Principais: C | Python | TypeScript | Node.js | Git & GitHub
+```
 
 ---
 
@@ -40,10 +36,10 @@ Estudante de **Ciência da Computação** no IFCE e Desenvolvedor focado em **Fu
 
 ---
 
-### 📈 Estatísticas do GitHub
+### 📊 Estatísticas do GitHub
+
 <p align="left">
   <img src="https://vercel.app" alt="Estatísticas do GitHub" height="150"/>
-  <img src="https://vercel.app" alt="Linguagens mais usadas" height="150"/>
 </p>
 
 ---
