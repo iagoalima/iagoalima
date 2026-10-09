@@ -83,7 +83,7 @@ Bot para Discord voltado à organização e automatização de processos de soli
 
 **Tecnologias:** Node.js, TypeScript, Discord.js, Prisma e PostgreSQL.
 
-[**Acessar repositório →**][(https://github.com/iagoalima/AI-Assistant](https://github.com/iagoalima/atlas)
+[**Acessar repositório →**](https://github.com/iagoalima/atlas)
 
 ### TaskFlow
 
