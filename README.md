@@ -1,33 +1,20 @@
-<!--
-  IAGO LIMA • GitHub Profile README
-  Repositório: https://github.com/iagoalima/iagoalima
-  Paleta: preto, azul-marinho e azul elétrico
--->
+ <!-- Profile README — Iago Lima -->
 
 <div align="center">
 
-  <!-- BANNER -->
-  <img
-    src="https://capsule-render.vercel.app/api?type=rect&color=0:05070D,50:0B1426,100:102B50&height=190&section=header&text=IAGO%20LIMA&fontSize=52&fontColor=EAF2FF&fontAlignY=43&desc=SOFTWARE%20%20%E2%80%A2%20%20FULL%20STACK%20%20%E2%80%A2%20%20AI&descSize=13&descColor=7FA9E8&descAlignY=68&animation=fadeIn"
-    width="100%"
-    alt="Iago Lima — Software, Full Stack e Inteligência Artificial"
-  />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=180&color=0:050816,50:0B1630,100:123B70&text=IAGO%20LIMA&fontColor=FFFFFF&fontSize=48&fontAlignY=42&desc=SOFTWARE%20%E2%80%A2%20FULL%20STACK%20%E2%80%A2%20AI&descAlignY=65&descSize=14&animation=fadeIn" />
 
-  <br/>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&duration=3000&pause=1000&color=4D9FFF&center=true&vCenter=true&width=600&lines=Computer+Science+Student;Software+Development+%26+Backend;Building+projects+with+JavaScript+%26+TypeScript;Always+learning%2C+always+building." alt="Typing SVG" />
 
-  <!-- TYPING ANIMATION -->
-  <a href="https://github.com/iagoalima">
-    <img
-      src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=400&size=16&duration=3000&pause=900&color=79A9F5&center=true&vCenter=true&width=600&lines=Estudante+de+Ci%C3%AAncia+da+Computa%C3%A7%C3%A3o;Desenvolvimento+de+Software;Explorando+Backend%2C+Full+Stack+e+IA;Transformando+ideias+em+projetos"
-      alt="Animação de texto com apresentação profissional"
-    />
-  </a>
+<br/>
 
-  <br/><br/>
-
-  [![GitHub](https://img.shields.io/badge/GitHub-iagoalima-101827?style=flat-square&logo=github&logoColor=EAF2FF)](https://github.com/iagoalima)
-  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-101827?style=flat-square&logo=linkedin&logoColor=79A9F5)](https://www.linkedin.com/in/iagoalima/)
-  [![Profile Views](https://komarev.com/ghpvc/?username=iagoalima&style=flat-square&color=163A68&label=VISITAS)](https://github.com/iagoalima)
+<a href="https://github.com/iagoalima">
+  <img src="https://img.shields.io/badge/GitHub-iagoalima-0B1220?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub"/>
+</a>
+<a href="https://www.linkedin.com/in/iagoalima/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-0B1220?style=for-the-badge&logo=linkedin&logoColor=4D9FFF" alt="LinkedIn"/>
+</a>
+<img src="https://komarev.com/ghpvc/?username=iagoalima&style=for-the-badge&color=123B70&label=PROFILE+VIEWS" alt="Profile views"/>
 
 </div>
 
@@ -35,15 +22,142 @@
 
 ## `01` — Sobre mim
 
-Olá! Sou **Iago Antônio Viana Lima**, estudante de **Ciência da Computação no IFCE Maracanaú**, interessado em desenvolvimento de software e na construção de soluções tecnológicas.
-
-Gosto de entender como as coisas funcionam por trás da interface: da lógica da aplicação à organização do backend, passando por bancos de dados, integrações e automações.
-
-Minha experiência com desenvolvimento também se conecta à criatividade. O contato com design, UI/UX e marketing digital contribui para que eu considere não apenas o funcionamento de uma solução, mas também sua apresentação e experiência de uso.
-
-Atualmente, busco uma oportunidade de **estágio em desenvolvimento de software**, na qual possa contribuir com projetos reais, aprofundar meus conhecimentos e evoluir como profissional.
-
 ```text
-FOCO       Desenvolvimento de Software
-INTERESSES Backend · Full Stack · Inteligência Artificial
-OBJETIVO   Estágio em tecnologia e evolução profissional
+Nome: Iago Antônio Viana Lima
+Formação: Ciência da Computação — IFCE Maracanaú
+Previsão de conclusão: 2029
+Objetivo: Estágio em Desenvolvimento de Software
+```
+
+Sou estudante de **Ciência da Computação**, interessado em desenvolvimento de software, construção de aplicações, back-end, bancos de dados e automações.
+
+Tenho experiência prática desenvolvendo projetos pessoais, incluindo bots para Discord com **Node.js e TypeScript**, além de aplicações que envolvem integração entre tecnologias e organização de dados.
+
+Também possuo experiência com comunicação visual, UI/UX e marketing digital, conhecimentos que contribuem para uma visão mais ampla da experiência do usuário e da apresentação de produtos digitais.
+
+Atualmente, busco evoluir tecnicamente por meio de projetos práticos e oportunidades de estágio na área de tecnologia.
+
+---
+
+## `02` — Tecnologias
+
+<div align="center">
+
+### Linguagens
+
+<img src="https://skillicons.dev/icons?i=js,ts,python,html,css&theme=dark" alt="Linguagens de programação"/>
+
+### Back-end e banco de dados
+
+<img src="https://skillicons.dev/icons?i=nodejs,express,sqlite,postgres,prisma&theme=dark" alt="Back-end e banco de dados"/>
+
+### Ferramentas
+
+<img src="https://skillicons.dev/icons?i=git,github,vscode&theme=dark" alt="Ferramentas de desenvolvimento"/>
+
+</div>
+
+---
+
+## `03` — Projetos em destaque
+
+<div align="center">
+
+<a href="https://github.com/iagoalima/AI-Assistant">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/pin/?username=iagoalima&repo=AI-Assistant&theme=transparent&hide_border=true&title_color=4D9FFF&text_color=C9D1D9&icon_color=4D9FFF" alt="AI Assistant"/>
+</a>
+
+</div>
+
+### AI Assistant
+
+Assistente de IA desenvolvido como projeto pessoal, com foco em uma aplicação web e integração entre back-end e interface.
+
+**Tecnologias:** JavaScript, Node.js, Express, SQLite, HTML e CSS.
+
+[**Acessar repositório →**](https://github.com/iagoalima/AI-Assistant)
+
+### Atlas
+
+Bot para Discord voltado à organização e automatização de processos de solicitações de medalhas, com comandos, interações privadas e gerenciamento de informações.
+
+**Tecnologias:** Node.js, TypeScript, Discord.js, Prisma e PostgreSQL.
+
+[**Acessar repositório →**][(https://github.com/iagoalima/AI-Assistant](https://github.com/iagoalima/atlas))
+
+### TaskFlow
+
+Projeto de back-end voltado à organização de tarefas, com foco na estruturação de uma API e no aprendizado de autenticação, persistência de dados e arquitetura de aplicações.
+
+**Tecnologias:** Node.js, TypeScript, Prisma e PostgreSQL.
+
+> O link do repositório será adicionado quando estiver definido (projeto em andamento.
+
+---
+
+## `04` — Estatísticas do GitHub
+
+<div align="center">
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=iagoalima&show_icons=true&hide_border=true&bg_color=00000000&title_color=4D9FFF&icon_color=4D9FFF&text_color=C9D1D9&rank_icon=github" alt="GitHub Stats"/>
+
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iagoalima&layout=compact&hide_border=true&bg_color=00000000&title_color=4D9FFF&text_color=C9D1D9&langs_count=8" alt="Top Languages"/>
+
+<br/>
+
+<img width="70%" src="https://streak-stats.demolab.com?user=iagoalima&theme=transparent&hide_border=true&ring=4D9FFF&fire=4D9FFF&currStreakLabel=4D9FFF&sideLabels=C9D1D9&dates=8B949E&currStreakNum=FFFFFF&sideNums=FFFFFF" alt="GitHub Streak"/>
+
+</div>
+
+---
+
+## `05` — Atividade
+
+<div align="center">
+
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=iagoalima&bg_color=00000000&color=C9D1D9&line=2563EB&point=4D9FFF&area=true&area_color=123B70&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution Activity"/>
+
+</div>
+
+---
+
+## `06` — Conquistas
+
+<div align="center">
+
+<img width="100%" src="https://github-profile-trophy.vercel.app/?username=iagoalima&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=4" alt="GitHub Trophies"/>
+
+</div>
+
+---
+
+## `07` — Contribution Snake
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/iagoalima/iagoalima/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake"/>
+
+</div>
+
+---
+
+## `08` — Vamos nos conectar?
+
+<div align="center">
+
+Estou aberto a oportunidades de estágio, projetos colaborativos e conexões com pessoas da área de tecnologia.
+
+<a href="https://github.com/iagoalima">
+  <img src="https://img.shields.io/badge/GitHub-0B1220?style=for-the-badge&logo=github&logoColor=FFFFFF" alt="GitHub"/>
+</a>
+<a href="https://www.linkedin.com/in/iagoalima/">
+  <img src="https://img.shields.io/badge/LinkedIn-0B1220?style=for-the-badge&logo=linkedin&logoColor=4D9FFF" alt="LinkedIn"/>
+</a>
+
+<br/><br/>
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=rect&height=70&color=0:050816,50:0B1630,100:123B70&section=footer"/>
+
+<sub>Construindo conhecimento, um projeto de cada vez.</sub>
+
+</div>
