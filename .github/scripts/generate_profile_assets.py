@@ -30,9 +30,12 @@ cells = []
 for tag in re.findall(r"<rect\b[^>]*>", calendar_html):
     date_match = re.search(r'data-date="(\d{4}-\d{2}-\d{2})"', tag)
     count_match = re.search(r'data-count="(\d+)"', tag)
-    if date_match and count_match:
+    level_match = re.search(r'data-level="(\d+)"', tag)
+    if date_match and (count_match or level_match):
         try:
-            cells.append((date.fromisoformat(date_match.group(1)), int(count_match.group(1))))
+            # GitHub's public calendar reliably exposes data-level; data-count is optional.
+            value = int(count_match.group(1)) if count_match else int(level_match.group(1))
+            cells.append((date.fromisoformat(date_match.group(1)), value))
         except ValueError:
             pass
 
@@ -55,10 +58,11 @@ while cursor <= today:
 weeks = weeks[-53:]
 
 def level(n):
+    # The public calendar's data-level is 0–4; data-count, when available, is an exact count.
     if n <= 0: return "#161b22"
-    if n <= 2: return "#0e4429"
-    if n <= 5: return "#006d32"
-    if n <= 9: return "#26a641"
+    if n <= 1: return "#0e4429"
+    if n <= 2: return "#006d32"
+    if n <= 3: return "#26a641"
     return "#39d353"
 
 width, height = 850, 184
@@ -66,7 +70,7 @@ parts = [
     f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}">',
     '<rect width="100%" height="100%" rx="12" fill="#0d1117"/>',
     '<text x="24" y="30" fill="#c9d1d9" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">Contribution activity</text>',
-    f'<text x="{width-24}" y="30" text-anchor="end" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="11">Last 12 months · {sum(n for _, n in cells)} contributions in displayed data</text>',
+    f'<text x="{width-24}" y="30" text-anchor="end" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="11">Last 12 months · GitHub contribution calendar</text>',
 ]
 # Day labels and month labels
 for label, row in [("Mon", 1), ("Wed", 3), ("Fri", 5)]:
@@ -107,12 +111,12 @@ public_repos = int(user.get("public_repos", len(repos)))
 stars = sum(int(repo.get("stargazers_count", 0)) for repo in repos)
 forks = sum(int(repo.get("forks_count", 0)) for repo in repos)
 followers = int(user.get("followers", 0))
-contributions_year = sum(n for d, n in cells if d.year == today.year)
+contributions_year = sum(1 for d, n in cells if d.year == today.year and n > 0)
 metrics = [
     ("PUBLIC REPOSITORIES", public_repos, "Projects shared publicly"),
     ("STARS EARNED", stars, "Stars across public repositories"),
     ("FOLLOWERS", followers, "GitHub community"),
-    ("CONTRIBUTIONS THIS YEAR", contributions_year, "Activity recorded on GitHub"),
+    ("ACTIVE DAYS THIS YEAR", contributions_year, "Days with GitHub activity"),
 ]
 card_w, card_h, gap = 190, 108, 14
 panel_w, panel_h = 4*card_w + 3*gap + 40, 180
