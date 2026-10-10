@@ -30,9 +30,9 @@ cells = []
 # GitHub has used both <rect> and <td> elements for contribution calendar cells.
 # Parse any HTML tag carrying data-date, rather than assuming a specific element type.
 for tag in re.findall(r"<[^>]+>", calendar_html):
-        date_match = re.search(r'data-date="(\d{4}-\d{2}-\d{2})"', tag)
-        count_match = re.search(r'data-count="(\d+)"', tag)
-        level_match = re.search(r'data-level="(\d+)"', tag)
+    date_match = re.search(r'data-date="(\d{4}-\d{2}-\d{2})"', tag)
+    count_match = re.search(r'data-count="(\d+)"', tag)
+    level_match = re.search(r'data-level="(\d+)"', tag)
     if date_match and (count_match or level_match):
         try:
             # Exact counts are used when available; otherwise use the 0–4 activity level.
