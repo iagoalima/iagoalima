@@ -29,12 +29,12 @@ jobs:
 
       - name: Commit generated SVGs
         run: |
-          if git diff --quiet -- assets/profile/activity.svg assets/profile/achievements.svg; then
-            echo "Profile SVGs are already up to date."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/profile/activity.svg assets/profile/achievements.svg
+          if git diff --cached --quiet; then
+            echo "Profile SVGs are already up to date."
+            exit 0
+          fi
           git commit -m "chore: update profile SVG assets"
           git push
