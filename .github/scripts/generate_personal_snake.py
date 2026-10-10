@@ -4,8 +4,8 @@ from pathlib import Path
 
 W, H = 1000, 260
 STEP, PIXEL = 16, 13
-FRAMES_PER_WORD = 240
-FRAME_MS = 50
+FRAMES_PER_WORD = 900
+FRAME_MS = 40
 WORDS = ["IAGO LIMA", "IFCE", "BOAMA"]
 GLYPHS = {
     "A":["01110","10001","10001","11111","10001"],
@@ -161,7 +161,7 @@ def main():
         sample.paste(rgb_frames[i], (0, i * H))
     palette_source = sample.resize((256, 1)).quantize(colors=128, method=Image.Quantize.MEDIANCUT)
     frames = [frame.quantize(palette=palette_source, dither=Image.Dither.NONE) for frame in rgb_frames]
-    frames[0].save(out, save_all=True, append_images=frames[1:], duration=FRAME_MS, loop=0, optimize=False, disposal=2)
+    frames[0].save(out, save_all=True, append_images=frames[1:], duration=FRAME_MS, loop=0, optimize=True, disposal=2)
     print(f"Generated {out} with {len(frames)} frames at {1000/FRAME_MS:.0f} fps.")
 
 if __name__ == "__main__":
