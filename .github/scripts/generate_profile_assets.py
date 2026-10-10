@@ -27,9 +27,9 @@ start = today - timedelta(days=370)
 calendar_url = f"https://github.com/users/{USER}/contributions?from={start.isoformat()}&to={today.isoformat()}"
 calendar_html = get(calendar_url, "text/html")
 cells = []
-for tag in re.findall(r"<rect\\b[^>]*>", calendar_html):
-    date_match = re.search(r'data-date="(\\d{4}-\\d{2}-\\d{2})"', tag)
-    count_match = re.search(r'data-count="(\\d+)"', tag)
+for tag in re.findall(r"<rect\b[^>]*>", calendar_html):
+    date_match = re.search(r'data-date="(\d{4}-\d{2}-\d{2})"', tag)
+    count_match = re.search(r'data-count="(\d+)"', tag)
     if date_match and count_match:
         try:
             cells.append((date.fromisoformat(date_match.group(1)), int(count_match.group(1))))
