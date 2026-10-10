@@ -115,9 +115,9 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 
 <div align="center">
   <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=iagoalima&bg_color=0d1117&color=c9d1d9&line=2563eb&point=4d9fff&area=true&hide_border=true"
+    src="https://github-readme-activity-graph.vercel.app/graph?username=iagoalima&theme=github-compact&hide_border=true"
     width="100%"
-    alt="Contribution Activity"
+    alt="GitHub Contribution Activity"
   />
 </div>
 
@@ -127,7 +127,7 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 
 <div align="center">
   <img
-    src="https://github-profile-trophy.vercel.app/?username=iagoalima&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=4"
+    src="https://github-profile-trophy-liard-delta.vercel.app/?username=iagoalima&theme=algolia&no-frame=true&no-bg=true&column=4"
     width="100%"
     alt="GitHub Trophies"
   />
