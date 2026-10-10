@@ -114,23 +114,15 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 ## `05` — Atividade
 
 <div align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=iagoalima&theme=github-compact&hide_border=true"
-    width="100%"
-    alt="GitHub Contribution Activity"
-  />
+  <img src="https://raw.githubusercontent.com/iagoalima/iagoalima/main/assets/profile/activity.svg" width="100%" alt="GitHub Contribution Activity"/>
 </div>
 
 ---
 
-## `06` — Conquistas
+## `06` — Conquistas e marcos do perfil
 
 <div align="center">
-  <img
-    src="https://github-profile-trophy-liard-delta.vercel.app/?username=iagoalima&theme=algolia&no-frame=true&no-bg=true&column=4"
-    width="100%"
-    alt="GitHub Trophies"
-  />
+  <img src="https://raw.githubusercontent.com/iagoalima/iagoalima/main/assets/profile/achievements.svg" width="100%" alt="GitHub Profile Milestones"/>
 </div>
 
 ---
