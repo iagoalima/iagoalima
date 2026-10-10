@@ -17,19 +17,13 @@
  <text x="500" y="132" class="trace p2">IFCE</text>
  <text x="500" y="132" class="trace p3">BOAMA</text>
 </g>
-<g filter="url(#glow)">
- <circle class="head h1" r="7" fill="#E0F2FE"><animateMotion dur="4s" repeatCount="indefinite" path="M220 80 C220 80 220 80 220 80"/></circle>
- <circle class="head h2" r="7" fill="#E0F2FE"><animateMotion dur="4s" begin="4s" repeatCount="indefinite" path="M390 80 C390 80 390 80 390 80"/></circle>
- <circle class="head h3" r="7" fill="#E0F2FE"><animateMotion dur="4s" begin="8s" repeatCount="indefinite" path="M330 80 C330 80 330 80 330 80"/></circle>
-</g>
+
 <text x="500" y="218" text-anchor="middle" font-family="ui-monospace, monospace" font-size="14" letter-spacing="4" fill="#7DD3FC" opacity=".9">PERSONAL SNAKE · NEON BLUE · LOOP</text>
 <style>
 .base{fill:#DCEBFA;opacity:0}
 .b1{animation:show1 12s infinite}.b2{animation:show2 12s infinite}.b3{animation:show3 12s infinite}
-.trace{fill:none;stroke:url(#neon);stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round;filter:url(#glow);stroke-dasharray:22 1500;stroke-dashoffset:1500;opacity:0}
+.trace{fill:none;stroke:url(#neon);stroke-width:3.5;stroke-linejoin:round;stroke-linecap:round;filter:url(#glow);stroke-dasharray:34 1500;stroke-dashoffset:1500;opacity:0}
 .p1{animation:trace1 12s linear infinite}.p2{animation:trace2 12s linear infinite}.p3{animation:trace3 12s linear infinite}
-.head{filter:url(#glow);opacity:0}
-.h1{animation:show1 12s infinite}.h2{animation:show2 12s infinite}.h3{animation:show3 12s infinite}
 @keyframes show1{0%,30%{opacity:1}33%,100%{opacity:0}}
 @keyframes show2{0%,32%{opacity:0}35%,63%{opacity:1}66%,100%{opacity:0}}
 @keyframes show3{0%,65%{opacity:0}68%,96%{opacity:1}99%,100%{opacity:0}}
