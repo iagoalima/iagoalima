@@ -27,13 +27,15 @@ start = today - timedelta(days=370)
 calendar_url = f"https://github.com/users/{USER}/contributions?from={start.isoformat()}&to={today.isoformat()}"
 calendar_html = get(calendar_url, "text/html")
 cells = []
-for tag in re.findall(r"<rect\b[^>]*>", calendar_html):
-    date_match = re.search(r'data-date="(\d{4}-\d{2}-\d{2})"', tag)
-    count_match = re.search(r'data-count="(\d+)"', tag)
-    level_match = re.search(r'data-level="(\d+)"', tag)
+# GitHub has used both <rect> and <td> elements for contribution calendar cells.
+# Parse any HTML tag carrying data-date, rather than assuming a specific element type.
+for tag in re.findall(r"<[^>]+>", calendar_html):
+    date_match = re.search(r'data-date=["\\'](\\d{4}-\\d{2}-\\d{2})["\\']', tag)
+    count_match = re.search(r'data-count=["\\'](\\d+)["\\']', tag)
+    level_match = re.search(r'data-level=["\\'](\\d+)["\\']', tag)
     if date_match and (count_match or level_match):
         try:
-            # GitHub's public calendar reliably exposes data-level; data-count is optional.
+            # Exact counts are used when available; otherwise use the 0–4 activity level.
             value = int(count_match.group(1)) if count_match else int(level_match.group(1))
             cells.append((date.fromisoformat(date_match.group(1)), value))
         except ValueError:
