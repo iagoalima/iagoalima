@@ -114,9 +114,11 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 ## `05` — Atividade
 
 <div align="center">
-
-<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=iagoalima&bg_color=00000000&color=C9D1D9&line=2563EB&point=4D9FFF&area=true&area_color=123B70&hide_border=true&custom_title=Contribution%20Activity" alt="Contribution Activity"/>
-
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=iagoalima&bg_color=0d1117&color=c9d1d9&line=2563eb&point=4d9fff&area=true&hide_border=true"
+    width="100%"
+    alt="Contribution Activity"
+  />
 </div>
 
 ---
@@ -124,9 +126,11 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 ## `06` — Conquistas
 
 <div align="center">
-
-<img width="100%" src="https://github-profile-trophy.vercel.app/?username=iagoalima&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=4" alt="GitHub Trophies"/>
-
+  <img
+    src="https://github-profile-trophy.vercel.app/?username=iagoalima&theme=algolia&no-frame=true&no-bg=true&margin-w=8&column=4"
+    width="100%"
+    alt="GitHub Trophies"
+  />
 </div>
 
 ---
