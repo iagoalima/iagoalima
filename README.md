@@ -131,7 +131,7 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 
 <div align="center">
 
-<img width="100%" src="https://raw.githubusercontent.com/iagoalima/iagoalima/main/assets/profile/personal-snake.svg?v=cc28b221fa" alt="Neon blue snake tracing Iago Lima, IFCE and Boama"/>
+<img width="100%" src="https://raw.githubusercontent.com/iagoalima/iagoalima/main/assets/profile/personal-snake.svg?v=50cf3ecd7b" alt="Neon blue snake tracing Iago Lima, IFCE and Boama"/>
 
 </div>
 
