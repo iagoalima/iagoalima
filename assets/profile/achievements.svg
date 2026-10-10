@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="842" height="180" viewBox="0 0 842 180">
+<rect width="100%" height="100%" rx="12" fill="#0d1117"/>
+<text x="20" y="28" fill="#c9d1d9" font-family="Segoe UI,Arial,sans-serif" font-size="16" font-weight="600">Profile milestones</text>
+<rect x="20" y="44" width="190" height="108" rx="9" fill="#111827" stroke="#1f3b63"/>
+<rect x="20" y="44" width="4" height="108" rx="2" fill="#4d9fff"/>
+<text x="34" y="69" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600">PUBLIC REPOSITORIES</text>
+<text x="34" y="104" fill="#4d9fff" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">6</text>
+<text x="34" y="127" fill="#c9d1d9" font-family="Segoe UI,Arial,sans-serif" font-size="10">Projects shared publicly</text>
+<rect x="224" y="44" width="190" height="108" rx="9" fill="#111827" stroke="#1f3b63"/>
+<rect x="224" y="44" width="4" height="108" rx="2" fill="#4d9fff"/>
+<text x="238" y="69" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600">STARS EARNED</text>
+<text x="238" y="104" fill="#4d9fff" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">0</text>
+<text x="238" y="127" fill="#c9d1d9" font-family="Segoe UI,Arial,sans-serif" font-size="10">Stars across public repositories</text>
+<rect x="428" y="44" width="190" height="108" rx="9" fill="#111827" stroke="#1f3b63"/>
+<rect x="428" y="44" width="4" height="108" rx="2" fill="#4d9fff"/>
+<text x="442" y="69" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600">FOLLOWERS</text>
+<text x="442" y="104" fill="#4d9fff" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">0</text>
+<text x="442" y="127" fill="#c9d1d9" font-family="Segoe UI,Arial,sans-serif" font-size="10">GitHub community</text>
+<rect x="632" y="44" width="190" height="108" rx="9" fill="#111827" stroke="#1f3b63"/>
+<rect x="632" y="44" width="4" height="108" rx="2" fill="#4d9fff"/>
+<text x="646" y="69" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="10" font-weight="600">ACTIVE DAYS THIS YEAR</text>
+<text x="646" y="104" fill="#4d9fff" font-family="Segoe UI,Arial,sans-serif" font-size="27" font-weight="700">15</text>
+<text x="646" y="127" fill="#c9d1d9" font-family="Segoe UI,Arial,sans-serif" font-size="10">Days with GitHub activity</text>
+</svg>
