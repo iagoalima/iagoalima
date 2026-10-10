@@ -127,7 +127,17 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 
 ---
 
-## `07` — Contribution Snake
+## `07` — Personal Snake
+
+<div align="center">
+
+<img width="100%" src="https://raw.githubusercontent.com/iagoalima/iagoalima/main/assets/profile/personal-snake.svg" alt="Neon blue snake tracing Iago Lima, IFCE and Boama"/>
+
+</div>
+
+---
+
+## `08` — Contribution Snake
 
 <div align="center">
 
@@ -137,7 +147,7 @@ Projeto de back-end voltado à organização de tarefas, com foco na estruturaç
 
 ---
 
-## `08` — Vamos nos conectar?
+## `09` — Vamos nos conectar?
 
 <div align="center">
 
