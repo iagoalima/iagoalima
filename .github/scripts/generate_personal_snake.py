@@ -4,8 +4,8 @@ from pathlib import Path
 
 W, H = 1000, 260
 STEP, PIXEL = 16, 13
-FRAMES_PER_WORD = 120
-FRAME_MS = 100
+FRAMES_PER_WORD = 240
+FRAME_MS = 50
 WORDS = ["IAGO LIMA", "IFCE", "BOAMA"]
 GLYPHS = {
     "A":["01110","10001","10001","11111","10001"],
@@ -108,13 +108,13 @@ def draw_frame(word_data, progress):
             d.rounded_rectangle((x,y,x+PIXEL,y+PIXEL), radius=1, fill=PIXEL_COLOR, outline=PIXEL_EDGE, width=1)
 
     frame = Image.alpha_composite(frame.convert("RGBA"), glow_layer)
-    # Repaint only pixels not yet eaten so the glow doesn't remain after collection.
+    # Remove the glow only around pixels already collected, preserving the background grid.
     d = ImageDraw.Draw(frame)
     for gx, gy in pixels:
         if head_dist >= target_indices[(gx,gy)]:
             x = offset_x + gx*STEP
             y = offset_y + gy*STEP
-            d.rectangle((x-3,y-3,x+PIXEL+3,y+PIXEL+3), fill=BG)
+            d.rounded_rectangle((x-2,y-2,x+PIXEL+2,y+PIXEL+2), radius=3, fill=BG)
 
     def point_at(distance):
         distance = max(0.0, min(distance, len(route)-1))
@@ -148,14 +148,21 @@ def draw_frame(word_data, progress):
 def main():
     out = Path("assets/profile/personal-snake.gif")
     out.parent.mkdir(parents=True, exist_ok=True)
-    all_frames=[]
+    rgb_frames=[]
     for word in WORDS:
         data=build_word(word)
         for frame_no in range(FRAMES_PER_WORD):
             progress=frame_no/(FRAMES_PER_WORD-1)
-            all_frames.append(draw_frame(data, progress).quantize(colors=128, method=Image.Quantize.MEDIANCUT))
-    all_frames[0].save(out, save_all=True, append_images=all_frames[1:], duration=FRAME_MS, loop=0, optimize=True, disposal=2)
-    print(f"Generated {out} with {len(all_frames)} frames.")
+            rgb_frames.append(draw_frame(data, progress))
+
+    # Use one shared palette for every frame to prevent color flicker and ghosting.
+    sample = Image.new("RGB", (W, H * min(12, len(rgb_frames))), BG)
+    for i in range(min(12, len(rgb_frames))):
+        sample.paste(rgb_frames[i], (0, i * H))
+    palette_source = sample.resize((256, 1)).quantize(colors=128, method=Image.Quantize.MEDIANCUT)
+    frames = [frame.quantize(palette=palette_source, dither=Image.Dither.NONE) for frame in rgb_frames]
+    frames[0].save(out, save_all=True, append_images=frames[1:], duration=FRAME_MS, loop=0, optimize=False, disposal=2)
+    print(f"Generated {out} with {len(frames)} frames at {1000/FRAME_MS:.0f} fps.")
 
 if __name__ == "__main__":
     main()
